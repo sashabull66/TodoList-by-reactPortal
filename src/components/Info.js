@@ -7,7 +7,8 @@ export const Info = () => {
                 <div className="col s12 m6">
                     <div className="card blue-grey darken-1">
                         <div className="card-content white-text">
-                            <span className="card-title">Todo List</span>
+                            <span className="card-title">Todo List. Приложение создано для того что-бы попрактиковаться
+                                работе с ReactDOM.createPortal</span>
                             <p>version 1.0.0</p>
                         </div>
                     </div>

@@ -17,7 +17,7 @@ setTodos((prev)=>{return prev.filter(todo=>todo.id !== id)})
         <div>
             {todos.length === 0 ? <h4 style={{textAlign: 'center'}}>Нету задач</h4> :
                 <ul className="collection">
-                    {todos.map(todo => <TodoItem key={todo.id} title={todo.title} del={()=>{delTodo(todo.id)}}/>)}
+                    {todos.map(todo => <TodoItem key={todo.id} title={todo.title} id={todo.id} del={delTodo}/>)}
                 </ul>}
         </div>
     )

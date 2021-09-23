@@ -1,10 +1,10 @@
 import React from "react";
 import {BrowserRouter, Route, Switch} from 'react-router-dom'
 
-import './App.css';
 import {Navbar} from "./components/Navbar";
 import {TodoList} from "./components/TodoList";
 import {Info} from "./components/Info";
+import {BeforeDeleteModal} from "./components/BeforeDeleteModal";
 
 function App() {
     return (
@@ -16,6 +16,8 @@ function App() {
                     <Route path='/info' render={()=><Info/>}/>
                 </Switch>
             </div>
+            {/*<Portal><h1>dsfdsfdsf</h1></Portal>*/}
+            {/*<BeforeDeleteModal/>*/}
         </BrowserRouter>
     );
 }
